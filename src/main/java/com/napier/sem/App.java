@@ -192,8 +192,7 @@ public class App
                             + "AND employees.emp_no = titles.emp_no "
                             + "AND salaries.to_date = '9999-01-01' "
                             + "AND titles.to_date = '9999-01-01' "
-                            + "AND titles.title = " + ROLE
-                            + " ORDER BY employees.emp_no ASC";
+                            + "AND titles.title = '" + ROLE + "'  ORDER BY employees.emp_no ASC";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
             // Extract employee information
