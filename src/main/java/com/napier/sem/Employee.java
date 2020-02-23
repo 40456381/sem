@@ -33,10 +33,18 @@ public class Employee
     /**
      * Employee's current department
      */
-    public String dept_name;
+    public Department debt;
+
+    public Employee getManager() {
+        return manager;
+    }
+
+    public void setManager(Employee manager) {
+        this.manager = manager;
+    }
 
     /**
      * Employee's manager
      */
-    public String manager;
+    public Employee manager;
 }
