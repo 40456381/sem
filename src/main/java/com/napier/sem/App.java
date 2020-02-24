@@ -20,7 +20,7 @@ public class App {
         //getSalariesByDepartment
         Department dept = a.getDepartment("SALES");
         a.printDepartment(dept);
-        //ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
+        ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
 
 
         //display salaries
@@ -235,8 +235,8 @@ public class App {
             Statement stmt = con.createStatement();
             // Create string for SQL statement
             String strSelect =
-                    "SELECT department.dept_no, department.dept_name "
-                            + "FROM department "
+                    "SELECT departments.dept_no, departments.dept_name "
+                            + "FROM departments "
                             + "WHERE dept_name = '" + dept_name + "' ";
             // Execute SQL statement
             ResultSet rset = stmt.executeQuery(strSelect);
