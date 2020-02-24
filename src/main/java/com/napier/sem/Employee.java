@@ -3,8 +3,7 @@ package com.napier.sem;
 /**
  * Represents an employee
  */
-public class Employee
-{
+public class Employee {
     /**
      * Employee number
      */
@@ -30,10 +29,6 @@ public class Employee
      */
     public int salary;
 
-    /**
-     * Employee's current department
-     */
-    public Department debt;
 
     public Employee getManager() {
         return manager;
@@ -47,4 +42,14 @@ public class Employee
      * Employee's manager
      */
     public Employee manager;
+
+    public Department getDept() {
+        return dept;
+    }
+
+    public void setDept(Department dept) {
+        this.dept = dept;
+    }
+
+    public Department dept;
 }
