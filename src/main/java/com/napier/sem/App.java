@@ -19,11 +19,12 @@ public class App {
 
         //getSalariesByDepartment
         Department dept = a.getDepartment("SALES");
-        ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
+        a.printDepartment(dept);
+        //ArrayList<Employee> employees = a.getSalariesByDepartment(dept);
 
 
         //display salaries
-        a.printSalaries(employees);
+        //a.printSalaries(employees);
 
 
         // Disconnect from database
@@ -220,6 +221,11 @@ public class App {
                             emp.emp_no, emp.first_name, emp.last_name, emp.salary);
             System.out.println(emp_string);
         }
+    }
+
+    public void printDepartment(Department dept) {
+       //print department
+        System.out.println(dept.dept_name);
     }
 
 
