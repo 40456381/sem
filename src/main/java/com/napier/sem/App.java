@@ -216,6 +216,10 @@ public class App
         }
     }
 
+    /**
+     * Prints a list of employees.
+     * @param emp is the employee to print.
+     */
     public void displayEmployee(Employee emp)
     {
         if (emp != null)
