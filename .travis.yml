@@ -25,7 +25,7 @@ jobs:
       script: mvn test -Dtest=com.napier.sem.AppTest
     - stage: integration tests
       jdk: oraclejdk11
-      script: mvn integration-test -Dtest=com.napier.sem.AppIntegrationTest -DfailIfNoTests=false
+      script: mvn test -Dtest=com.napier.sem.AppIntegrationTest -DfailIfNoTests=false
     - stage: deploy
       install: skip
       jdk: oraclejdk11

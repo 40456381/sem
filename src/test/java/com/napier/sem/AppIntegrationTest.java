@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class AppIntegrationTest
 {
     static App app;
-
+/*
     @BeforeAll
     static void init()
     {
@@ -27,5 +27,5 @@ public class AppIntegrationTest
         assertEquals(emp.first_name, "Ronghao");
         assertEquals(emp.last_name, "Garigliano");
     }
-
+*/
 }
