@@ -65,6 +65,7 @@
                 <configuration>
                     <systemPropertyVariables>
                         <xmlOutputDir>${project.build.directory}/surefire</xmlOutputDir>
+                        <testFailureIgnore>true</testFailureIgnore>
                     </systemPropertyVariables>
                 </configuration>
                 <dependencies>
