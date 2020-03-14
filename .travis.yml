@@ -27,10 +27,12 @@ jobs:
       jdk: oraclejdk11
       script: mvn test -Dtest=com.napier.sem.AppIntegrationTest -DfailIfNoTests=false
     - stage: deploy
-      
+
       jdk: oraclejdk11
       script:
         - mvn package -DskipTests=true -Dmaven.javadoc.skip=true
+        - install: skip
+        - docker-compose down
         - docker-compose up --abort-on-container-exit
 
 stages:
